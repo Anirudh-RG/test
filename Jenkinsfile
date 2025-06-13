@@ -7,7 +7,7 @@ pipeline{
                 echo 'Preparing environment...'
                 sh "ls -la"
                 sh "docker --version"
-                sh "start.sh"
+                sh "cp /home/anirudh/.creds/.envdbname .env"
             }
         }
         stage('Build') {
