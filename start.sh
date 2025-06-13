@@ -1,0 +1,1 @@
+cp /home/anirudh/.creds/.envdbname /home/anirudh/.env

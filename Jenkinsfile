@@ -2,6 +2,14 @@ pipeline{
     agent any
     
     stages {
+        stage('Pre build'){
+            steps{
+                echo 'Preparing environment...'
+                sh "ls -la"
+                sh "docker --version"
+                sh "start.sh"
+            }
+        }
         stage('Build') {
             steps {
                 echo 'Building...'
